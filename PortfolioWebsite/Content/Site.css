@@ -60,7 +60,7 @@ nav ul {
     list-style-type: none;
     width:80%;
     text-align: center;
-    margin: 0px auto;
+    margin: 0 auto;
     padding:0;
 }
 nav li {
@@ -68,28 +68,69 @@ nav li {
     background-color: black;
     display: inline-block;
     padding: 20px;
-    border-radius: 100px;
 }
+
 nav li a:hover{
     text-decoration: none;
 
 }
-
-    nav li:hover {
-        background-color: white;
-    }
-    nav li:hover a {
-        color:black;
-    
-    }
-
-
 nav li a {
         text-decoration: none;
         color: white;
         text-align: center;
         text-transform: uppercase;
         font-family: 'moyudan';
+    }
+
+nav ul li,
+nav ul li:after,
+nav ul li:before {
+    transition: all .5s;
+}
+
+nav.fill ul li {
+    position: relative;
+}
+
+nav.fill ul li:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0%;
+    content: '.';
+    color:transparent;
+    background: white;
+    height: 1px;
+}
+
+nav.fill ul li{
+    transition: all 2s;
+}
+
+nav.fill ul li:after {
+    text-align: left;
+    content: '.';
+    margin: 0;
+    opacity: 0;
+}
+nav.fill ul li:hover {
+    color: black;
+    z-index: 1; 
+}
+    nav.fill ul li:hover > a {
+        color: black;
+    
+    }
+
+
+nav.fill ul li:hover:after {
+        z-index: -10;
+        animation: fill 0.5s forwards;
+        -webkit-animation: fill 0.5s forwards;
+        -moz-animation: fill 0.5s forwards;
+        opacity: 1;
     }
 
 .toggle {
@@ -132,6 +173,11 @@ a:hover {
     color:black;
     
 }
+li:hover{
+    color:black;
+
+}
+
 socials a:visited {
     text-decoration:none;
     color: white;
@@ -168,6 +214,25 @@ socials a:visited {
         }
 
 
+}
+
+
+/* KEYFRAMES */
+
+@-webkit-keyframes fill {
+    0% {
+        width:0;
+        height: 1px;
+    }
+    50% {
+        width: 100%;
+        height: 1px;
+    }
+    100% {
+        width: 100%;
+        height: 100%;
+        background: white;
+    }
 }
 
 
