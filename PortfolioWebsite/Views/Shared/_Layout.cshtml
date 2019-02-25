@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+</head>
+<body>
+<div class ="layer">
+
+
+
+<header>
+    <p>Louis de Jager</p>
+    <div class="socials">
+        <a href="https://www.instagram.com/louis_dejager/"><i class="fab fa-instagram"></i></a>
+        <a href=""><i class="fab fa-github"></i></a>
+        <a href=""><i class="fas fa-at"></i></a>
+    </div>
+</header>
+
+
+
+    <nav>
+        <div class="toggle">
+            <i class="fas fa-bars menu"></i>
+        </div>
+        <ul>
+            <li><a href="#">about me</a></li>
+            <li><a href="#">projects and skills</a></li>
+            <li><a href="#">education and qualifications</a></li>
+        </ul>
+
+    </nav>
+
+
+
+<div class="container body-content">
+    @RenderBody()
+</div>
+
+
+
+
+
+
+    @Scripts.Render("~/bundles/jquery")
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('.toggle').click(function() {
+                $('ul').toggleClass('active');
+            })
+        })
+    </script>
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</div>
+</body>
+</html>
