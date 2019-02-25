@@ -68,14 +68,15 @@ nav li {
     background-color: black;
     display: inline-block;
     padding: 20px;
+    border-radius: 100px;
 }
 nav li a:hover{
     text-decoration: none;
 
-}   
+}
 
-nav li:hover {
-        background-color: #fbc403;
+    nav li:hover {
+        background-color: white;
     }
     nav li:hover a {
         color:black;
