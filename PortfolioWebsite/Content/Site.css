@@ -184,6 +184,33 @@ socials a:visited {
 
 }
 
+.currenttile {
+        border-bottom-style:solid;
+        border-bottom-width: 4px;
+        background-color: white;
+        color:black;
+
+}
+    .currenttile > a {
+        color:black;
+    
+    }
+
+.paratext {
+    margin: 0 0;
+    margin-top: 10%;
+    background-color: white;
+    color: black;
+    height: 100%;
+    width: 100%;
+}
+    .paratext h1 {
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+    
+    }
+
 @media (max-width:768px) {
     .toggle {
         display: block;
