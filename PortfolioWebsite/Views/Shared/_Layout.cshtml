@@ -1,12 +1,12 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Louis de Jager - Portfolio</title>
-    @Styles.Render("~/Content/css")
-    @Scripts.Render("~/bundles/modernizr")
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Louis de Jager - Portfolio</title>
+	@Styles.Render("~/Content/css")
+	@Scripts.Render("~/bundles/modernizr")
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 </head>
 <body>
 <div class ="layer">
@@ -14,50 +14,55 @@
 
 
 <header>
-    <p>Louis de Jager</p>
-    <div class="socials">
-        <a href="https://www.instagram.com/louis_dejager/"><i class="fab fa-instagram"></i></a>
-        <a href="https://www.github.com/louiskop/"><i class="fab fa-github"></i></a>
-        <a href=""><i class="fas fa-at"></i></a>
-    </div>
+	<p>Louis de Jager</p>
+	<div class="socials">
+		<a href="https://www.instagram.com/louis_dejager/"><i class="fab fa-instagram"></i></a>
+		<a href="https://www.github.com/louiskop/"><i class="fab fa-github"></i></a>
+		<a href=""><i class="fas fa-at"></i></a>
+	</div>
 </header>
 
 
 
-    <nav class="fill">
-        <div class="toggle">
-            <i class="fas fa-bars menu"></i>
-        </div>
-        <ul>
-            <li id="li1" ><a href="#">about me</a></li>
-            <li id="li2"><a href="#">projects and skills</a></li>
-            <li id="li3"><a href="#">education and qualifications</a></li>
-        </ul>
+	<nav class="fill">
+		<div class="toggle">
+			<i class="fas fa-bars menu"></i>
+		</div>
+		<ul>
+			<li id="li1" ><a href="#">about me</a></li>
+			<li id="li2"><a href="#">projects and skills</a></li>
+			<li id="li3"><a href="#">education and qualifications</a></li>
+		</ul>
 
-    </nav>
+	</nav>
 
 
-    @Scripts.Render("~/bundles/jquery")
-    <div class="body-content">
-    @RenderBody()
-    </div>
+	@Scripts.Render("~/bundles/jquery")
+	<div class="body-content">
+	@RenderBody()
+	</div>
  
-    
-    <footer>
-        
+	
+	<footer>
+		<p>Still curious?</p>
+		<ul>
+			<li><a>Contact me</a></li>
+			<li><a>Follow me</a></li>
+		</ul>
+		<a href="https://www.github.com/louiskop"><img  src="/Content/Images/white-github.png" alt="visit my github www.github.com/louiskop"></a>
 
-    </footer>
+	</footer>
 
 
-    <script type="text/javascript">
-        $(document).ready(function() {
-            $('.toggle').click(function() {
-                $('ul').toggleClass('active');
-            })
-        })
-    </script>
-    @Scripts.Render("~/bundles/bootstrap")
-    @RenderSection("scripts", required: false)
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('.toggle').click(function() {
+				$('ul').toggleClass('active');
+			})
+		})
+	</script>
+	@Scripts.Render("~/bundles/bootstrap")
+	@RenderSection("scripts", required: false)
 </div>
 </body>
 </html>

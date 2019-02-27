@@ -2,259 +2,297 @@
    will truncate terms that are too long to fit in the left column 
 */
 .dl-horizontal dt {
-    white-space: normal;
+	white-space: normal;
 }
 
 @font-face {
-    font-family:'moyudan';
-    src: url("Moyudan.ttf") format('truetype');
+	font-family:'moyudan';
+	src: url("Moyudan.ttf") format('truetype');
 
 }
 @font-face {
-    font-family: 'heading';
-    src: url("TwistedSystemDemo.otf") format('opentype');
+	font-family: 'heading';
+	src: url("TwistedSystemDemo.otf") format('opentype');
 }
 
 
 * {
-    margin: 0;
-    padding: 0;
+	margin: 0;
+	padding: 0;
 }
 
 body {
-    background: url("Images/images.jpg") no-repeat center center fixed;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 100%;
-    
+	background: url("Images/images.jpg") no-repeat center center fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 100%;
+	
 }
 .layer {
-       background-color: rgba(252, 198, 3, 0.88); /*hex code  = #fbc403;*/
-       position: absolute;
-       top: 0;
-       left: 0;
-       width: 100%;
-       height: 100%;
+	   background-color: rgba(252, 198, 3, 0.88); /*hex code  = #fbc403;*/
+	   position: absolute;
+	   top: 0;
+	   left: 0;
+	   width: 100%;
+	   height: 100%;
 
 }
 
 
 header {
-    font-size: 5vw;
-    background-color: black;
-    color: white;
-    position: relative;
-    height: 9vw;
-    width: 100%;
-    text-align: center;
-    font-family: heading;
-    padding-bottom: 6vw;
+	font-size: 5vw;
+	background-color: black;
+	color: white;
+	position: relative;
+	height: 9vw;
+	width: 100%;
+	text-align: center;
+	font-family: heading;
+	padding-bottom: 6vw;
 }
-    
+	
 nav {
-    margin-top:1%;
-    width: 100% ;
+	margin-top:1%;
+	width: 100% ;
 
 }
 
 nav ul {
-    list-style-type: none;
-    width:80%;
-    text-align: center;
-    margin: 0 auto;
-    padding:0;
+	list-style-type: none;
+	width:80%;
+	text-align: center;
+	margin: 0 auto;
+	padding:0;
 }
 nav li {
-    width: 25VW;
-    background-color: black;
-    display: inline-block;
-    padding: 20px;
+	width: 25VW;
+	background-color: black;
+	display: inline-block;
+	padding: 20px;
 }
 
 nav li a:hover{
-    text-decoration: none;
+	text-decoration: none;
 
 }
 nav li a {
-        text-decoration: none;
-        color: white;
-        text-align: center;
-        text-transform: uppercase;
-        font-family: 'moyudan';
-    }
+		text-decoration: none;
+		color: white;
+		text-align: center;
+		text-transform: uppercase;
+		font-family: 'moyudan';
+	}
 
 nav ul li,
 nav ul li:after,
 nav ul li:before {
-    transition: all .5s;
+	transition: all .5s;
 }
 
 nav.fill ul li {
-    position: relative;
+	position: relative;
 }
 
 nav.fill ul li:after {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-    width: 0%;
-    content: '.';
-    color:transparent;
-    background: white;
-    height: 1px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	width: 0%;
+	content: '.';
+	color:transparent;
+	background: white;
+	height: 1px;
 }
 
 nav.fill ul li{
-    transition: all 2s;
+	transition: all 2s;
 }
 
 nav.fill ul li:after {
-    text-align: left;
-    content: '.';
-    margin: 0;
-    opacity: 0;
+	text-align: left;
+	content: '.';
+	margin: 0;
+	opacity: 0;
 }
 nav.fill ul li:hover {
-    color: black;
-    z-index: 1; 
+	color: black;
+	z-index: 1; 
 }
-    nav.fill ul li:hover > a {
-        color: black;
-    
-    }
+	nav.fill ul li:hover > a {
+		color: black;
+	
+	}
 
 
 nav.fill ul li:hover:after {
-        z-index: -10;
-        animation: fill 0.5s forwards;
-        -webkit-animation: fill 0.5s forwards;
-        -moz-animation: fill 0.5s forwards;
-        opacity: 1;
-    }
+		z-index: -10;
+		animation: fill 0.5s forwards;
+		-webkit-animation: fill 0.5s forwards;
+		-moz-animation: fill 0.5s forwards;
+		opacity: 1;
+	}
 
 .toggle {
-    color: white;
-    width:100%;
-    padding: 10px 20px;
-    background: black;
-    text-align: right;
-    box-sizing: border-box;
-    font-size:30px;
-    display: none;
+	color: white;
+	width:100%;
+	padding: 10px 20px;
+	background: black;
+	text-align: right;
+	box-sizing: border-box;
+	font-size:30px;
+	display: none;
 }
 
 .socials {
-    color: black;
-    box-sizing: border-box;
-    font-size: 20px;
-    float:left;
-    margin-left: 2%;
-    margin-top: 2%;
-    position: absolute;
-    top: 10%;
-    left: 2%;
+	color: black;
+	box-sizing: border-box;
+	font-size: 20px;
+	float:left;
+	margin-left: 2%;
+	margin-top: 2%;
+	position: absolute;
+	top: 10%;
+	left: 2%;
 
 }
 .socials i {
-    padding: 10px 10px;
-    margin-left:20px;
-    background-color: white;
-    border-radius: 20px;
-    
+	padding: 10px 10px;
+	margin-left:20px;
+	background-color: white;
+	border-radius: 20px;
+	
 }
 
 .socials a {
-    text-decoration: none;
-    color: black;
+	text-decoration: none;
+	color: black;
 }
 a:hover {
-    text-decoration: none;
-    color:black;
-    
+	text-decoration: none;
+	color:black;
+	
 }
 li:hover{
-    color:black;
+	color:black;
 
 }
 
 socials a:visited {
-    text-decoration:none;
-    color: white;
+	text-decoration:none;
+	color: white;
 
 }
 
 .currenttile {
-        border-bottom-style:solid;
-        border-bottom-width: 4px;
-        background-color: white;
-        color:black;
+		border-bottom-style:solid;
+		border-bottom-width: 4px;
+		background-color: white;
+		color:black;
 
 }
-    .currenttile > a {
-        color:black;
-    
-    }
+	.currenttile > a {
+		color:black;
+	
+	}
 
 .body-content {
-    min-height: 100%;
-    margin: 0 0;
-    margin-top: 5%;
-    padding-top: 2%;
-    padding-bottom: 100px; /*This is also the size of the footer*/
-    background-color: white;
-    color: black;
-    height: 100%;
-    width: 100%;
-    overflow:auto;  
+	min-height: 100%;
+	margin: 0 0;
+	margin-top: 5%;
+	padding-top: 2%;
+	padding-bottom: 400px; /*This is also the size of the footer*/
+	background-color: white;
+	color: black;
+	height: 100%;
+	width: 100%;
+	overflow:auto;  
 }
 
-    .paratext h1 {
-        text-align: center;
-        text-transform: uppercase;
-        letter-spacing: 5px;
-    
-    }
+	.paratext h1 {
+		text-align: center;
+		text-transform: uppercase;
+		letter-spacing: 5px;
+	
+	}
 
 footer {
-    background-color: aqua;
-    position: relative;
-    height: 100px;
-    margin-top: -100px;
-    clear:both;
-
-
+	background-color: #282828;
+	position: relative;
+	height: 400px;  
+	margin-top: -400px;
+	clear: both;
+	color:white;
+	padding-top:2%;
+	padding-left:3%;
+	padding-right:3%;
+	font-size:4vw;
 }
 
+	footer ul {
+		text-align: center;
+		width: 100%
+
+	
+	}
+	footer ul li {
+		border-right: 1px solid white;
+		display: inline-block;
+		margin-top:50px;
+		padding-left: 100px;
+		padding-right: 100px;   
+		font-size: 2vw;
+	}
+	footer ul li:last-of-type {
+		border-right:none;
+		}
+	footer a {
+		text-decoration: none;
+		color:white;	
+	
+	}
+	footer img {
+		width:300px;
+		height:300px;
+		position:absolute;
+		top:0;
+		right:0;
+		padding-right:100px;
+		padding-top:100px;
+	
+	}
+
+
+
 @media (max-width:768px) {
-    .toggle {
-        display: block;
-    }
-    nav ul {
-        width:100%;
-        display: none;
+	 .toggle {
+		display: block;
+	}
+	nav ul {
+		width:100%;
+		display: none;
 
-    }
-    nav ul li {
-        display: block;
-        text-align: right;
-        width:100%;
-    }
-    .active {
-        display: block;
-    }
-    .socials {
-    font-size: 10px;
-    margin-left:0;
+	}
+	nav ul li {
+		display: block;
+		text-align: right;
+		width:100%;
+	}
+	.active {
+		display: block;
+	}
+	.socials {
+	font-size: 10px;
+	margin-left:0;
 
-    
-    }
-        .socials i {
-            margin-left: 7px;
-            padding: 3px 3px;
-        
-        }
+	
+	}
+		.socials i {
+			margin-left: 7px;
+			padding: 3px 3px;
+		
+		}
 
 
 }
@@ -263,19 +301,19 @@ footer {
 /* KEYFRAMES */
 
 @-webkit-keyframes fill {
-    0% {
-        width:0;
-        height: 1px;
-    }
-    50% {
-        width: 100%;
-        height: 1px;
-    }
-    100% {
-        width: 100%;
-        height: 100%;
-        background: white;
-    }
+	0% {
+		width:0;
+		height: 1px;
+	}
+	50% {
+		width: 100%;
+		height: 1px;
+	}
+	100% {
+		width: 100%;
+		height: 100%;
+		background: white;
+	}
 }
 
 
