@@ -212,9 +212,14 @@ socials a:visited {
 		letter-spacing: 5px;
 	
 	}
+
+
 #intropic {
-	width: 500px;
-	height: 500px;
+	display: block;
+	width: 300px;
+	height: 400px;
+	margin: auto;	
+
 
 }
 
