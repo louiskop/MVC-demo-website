@@ -21,6 +21,14 @@ namespace PortfolioWebsite
 			);
 
 			routes.MapRoute(
+				"Contact Page",
+				"{controller}/{action}/",
+				new {controller = "Home", action="Contact"}
+
+
+				);
+
+			routes.MapRoute(
 				name: "Projects and skills",
 				url: "{controller}/{action}/",
 				defaults: new { controller = "catagories", action = "ProjectsAndSkills" }
