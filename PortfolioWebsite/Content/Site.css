@@ -14,6 +14,15 @@
 	font-family: 'heading';
 	src: url("TwistedSystemDemo.otf") format('opentype');
 }
+@font-face {
+	font-family:'bodyheading';
+	src: url("bodyheadings.otf") format('opentype');
+}
+@font-face {
+	font-family:"bodytext";
+	src: url("bodytext.otf")  format('opentype');
+
+}
 
 
 * {
@@ -80,7 +89,8 @@ nav a {
 		color: white;
 		text-align: center;
 		text-transform: uppercase;
-		font-family: 'moyudan';
+		font-family: 'bodyheading';
+		font-size: 4rem;
 	}
 
 nav ul li,
@@ -206,10 +216,24 @@ socials a:visited {
 	width: 100%;
 }
 
+.paratext {
+	text-align: center;
+	padding-right: 50px;
+	padding-left: 50px;
+	font-size:2.6rem;
+	line-height: 1.5;
+	letter-spacing: 0.1em;
+	font-family: 'bodytext';
+
+}
+
+
 	.paratext h1 {
 		text-align: center;
 		text-transform: uppercase;
 		letter-spacing: 5px;
+		font-family: 'bodyheading';
+		font-size: 6rem;
 	
 	}
 
@@ -219,6 +243,7 @@ socials a:visited {
 	width: 300px;
 	height: 400px;
 	margin: auto;	
+	margin-bottom: 25px;
 
 
 }
