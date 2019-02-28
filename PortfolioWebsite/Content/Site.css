@@ -233,7 +233,8 @@ socials a:visited {
 		text-transform: uppercase;
 		letter-spacing: 5px;
 		font-family: 'bodyheading';
-		font-size: 6rem;
+		font-size: 7rem;
+		padding-bottom:10px;
 	
 	}
 
