@@ -40,7 +40,10 @@
 	@Scripts.Render("~/bundles/jquery")
 	<div class="body-content">
 	@RenderBody()
+	<div class="backnav">
+	<a id="scrolltop"><i id="backnav"class="fas fa-angle-double-up"></i></a>
 	</div>
+		</div>
  
 	
 	<footer>
@@ -55,6 +58,10 @@
 
 
 	<script type="text/javascript">
+		$('#scrolltop').click(function(){
+			$('html, body').animate({scrollTop:0}, 'slow');
+			return false;
+		});
 		$(document).ready(function() {
 			$('.toggle').click(function() {
 				$('ul').toggleClass('active');

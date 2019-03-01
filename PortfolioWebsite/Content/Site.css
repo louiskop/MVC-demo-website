@@ -294,6 +294,21 @@ footer {
 		padding-top:100px;
 	
 	}
+.backnav {
+	width:100%;
+	text-align: center;
+
+
+}
+
+#backnav{
+	padding:10px;
+	font-size:  40px;
+	background-color: black;
+	border-radius: 20px;
+	color: white;
+
+}
 
 
 
