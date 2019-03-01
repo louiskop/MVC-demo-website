@@ -234,8 +234,17 @@ socials a:visited {
 		font-family: 'bodyheading';
 		font-size: 7rem;
 		padding-bottom:20px;
-	
 	}
+	.paratext h2{
+		text-align: left;
+		font-size: 3vw;
+
+	}
+
+#descrip {
+	text-align:left;
+
+}
 
 
 #intropic {
@@ -310,6 +319,15 @@ footer {
 
 }
 
+.oddproj {
+	background-color: white;
+	color: black;
+}
+.evenproj {
+	background-color:black;
+	color:white;
+
+}
 
 
 @media (max-width:768px) {
