@@ -371,6 +371,17 @@ footer {
 			padding: 3px 3px;
 		
 		}
+	footer {
+		height:200px;
+	}
+		footer img {
+			width:150px;
+			height: 150px;
+		}
+	body-content {
+		padding-bottom: 225px;
+	}
+
 
 
 }

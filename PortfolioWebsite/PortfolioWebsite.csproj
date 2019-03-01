@@ -203,6 +203,7 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\catagories\ProjectsAndSkills.cshtml" />
     <Content Include="Views\catagories\EducationAndQualifications.cshtml" />
+    <Content Include="Views\Home\Follow.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

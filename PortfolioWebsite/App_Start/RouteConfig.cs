@@ -38,12 +38,19 @@ namespace PortfolioWebsite
 				"Education and Qualifications",
 				"{controller}/{action}/",
 				new {controller = "catagories", action = "EducationAndQualifications" }
-
-
-
-
-
 			);
+
+			routes.MapRoute(
+					"Follow me",
+					"{controller}/{action}/",
+					new {controller= "Home", action="Follow"}
+					);
+
+
+
+
+
+			
 		}
 	}
 }
