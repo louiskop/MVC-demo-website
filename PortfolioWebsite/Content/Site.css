@@ -225,9 +225,17 @@ socials a:visited {
 	font-family: 'bodytext';
 
 }
+.paratextnot {
+	text-align: center;
+	font-size:2.6rem;
+	line-height: 1.5;
+	letter-spacing: 0.1em;
+	font-family: 'bodytext';
+}
 
 
-	.paratext h1 {
+	.paratext h1 ,
+	.paratextnot h1{
 		text-align: center;
 		text-transform: uppercase;
 		letter-spacing: 5px;
@@ -235,7 +243,8 @@ socials a:visited {
 		font-size: 7rem;
 		padding-bottom:20px;
 	}
-	.paratext h2{
+	.paratext h2,
+	.paratextnot h2{
 		text-align: left;
 		font-size: 3vw;
 
@@ -270,6 +279,7 @@ footer {
 	padding-right:3%;
 	font-size:4vw;
 }
+
 
 	footer ul {
 		text-align: center;
@@ -320,13 +330,16 @@ footer {
 }
 
 .oddproj {
+	padding-left:100px;
+	padding-right: 100px;
 	background-color: white;
 	color: black;
 }
 .evenproj {
-	background-color:black;
-	color:white;
-
+	padding-left: 100px;
+	padding-right: 100px;
+	background-color: black;
+	color: white;
 }
 
 
