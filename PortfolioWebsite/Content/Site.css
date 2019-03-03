@@ -358,7 +358,15 @@ footer {
 	
 	}
 
+.Glist{
+	list-style:none;
+	text-align: left;
+	color: gray;
+	position:relative;
+	width:100%;
+	letter-spacing: 1px;
 
+}
 
 
 @media (max-width:768px) {
