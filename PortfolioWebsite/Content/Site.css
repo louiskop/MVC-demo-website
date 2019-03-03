@@ -262,7 +262,11 @@ socials a:visited {
 	height: 400px;
 	margin: auto;	
 	margin-bottom: 25px;
-
+}
+#githubpic {
+	width: 13.7vw;
+	height: 8vw;
+	margin-left: 20px;
 
 }
 
@@ -341,6 +345,20 @@ footer {
 	background-color: black;
 	color: white;
 }
+.followlist {
+	list-style: none;	
+	text-align: center;
+	width: 100%
+}
+	.followlist li {
+		display: inline-block;
+		height: 500px;
+		width:500px;
+		text-align: center;
+	
+	}
+
+
 
 
 @media (max-width:768px) {
