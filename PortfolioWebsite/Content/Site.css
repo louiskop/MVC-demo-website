@@ -360,9 +360,28 @@ footer {
 	list-style:none;
 	text-align: left;
 	color: gray;
-	position:relative;
 	width:100%;
 	letter-spacing: 1px;
+
+}
+	.Glist li {
+		display: inline;
+		padding-right: 30px;
+	}
+
+.instagramli a,
+.github a {
+	display:inline-block;
+	text-align: left;
+	background-color: black;
+	color:white;
+	padding:20px;
+	margin-top: 50px;
+	border-radius: 100px;
+}
+
+.instagramli a {
+	background: url("Images/instacolors.jpg");
 
 }
 

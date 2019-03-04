@@ -163,6 +163,7 @@
     <Content Include="Content\Images\gitbanner.png" />
     <Content Include="Content\Images\images.jpg" />
     <Content Include="Content\Images\Instabanner.png" />
+    <Content Include="Content\Images\instacolors.jpg" />
     <Content Include="Content\Images\white-github.png" />
     <Content Include="Content\Images\introimage.jpg" />
     <Content Include="favicon.ico" />
