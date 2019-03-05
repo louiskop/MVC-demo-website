@@ -13,14 +13,17 @@
 
 
 
-<header>
-	<p>Louis de Jager</p>
-	<div class="socials">
-		<a href="https://www.instagram.com/louis_dejager/"><i class="fab fa-instagram"></i></a>
-		<a href="https://www.github.com/louiskop/"><i class="fab fa-github"></i></a>
-		<a href="/Home/Contact"><i class="fas fa-at"></i></a>
-	</div>
-</header>
+	<header>
+		<p>Louis de Jager</p>
+		<div class="tofooter">
+		<a id="scrollbottom"><i id="tofooter" class="fas fa-angle-double-down"></i></a>
+			</div>
+		<div class="socials">
+			<a href="https://www.instagram.com/louis_dejager/"><i class="fab fa-instagram"></i></a>
+			<a href="https://www.github.com/louiskop/"><i class="fab fa-github"></i></a>
+			<a href="/Home/Contact"><i class="fas fa-at"></i></a>
+		</div>
+	</header>
 
 
 
@@ -60,6 +63,10 @@
 	<script type="text/javascript">
 		$('#scrolltop').click(function(){
 			$('html, body').animate({scrollTop:0}, 'slow');
+			return false;
+		});
+		$('#scrollbottom').click(function(){
+			$('html, body').animate({scrollTop:10000}, 'slow');
 			return false;
 		});
 		$(document).ready(function() {
