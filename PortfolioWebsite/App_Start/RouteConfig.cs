@@ -43,7 +43,7 @@ namespace PortfolioWebsite
 			routes.MapRoute(
 					"Follow me",
 					"{controller}/{action}/",
-					new {controller= "Home", action="Follow"}
+					new {controller= "Contact", action="Create"}
 					);
 
 
