@@ -4,18 +4,29 @@
 }
 
 <div class="paratext">
-	<h1>Send me an email</h1>
-	@using (Html.BeginForm("Create", "Contact", FormMethod.Post))
-	{
-		@Html.AntiForgeryToken()
-		@Html.TextBoxFor(m => m.FullName, new { @placeholder = "Full Name" })
-		@Html.ValidationMessageFor(m => m.FullName)
-		@Html.TextBoxFor(m => m.Email, new { @placeholder = "Email" })
-		@Html.ValidationMessageFor(m => m.Email)
-		@Html.TextAreaFor(m => m.Message, new { @placeholder = "Type message here" })
-		@Html.ValidationMessageFor(m => m.Message)
-		<input type="submit" value="SUBMIT">
-	}
+	<div class="contact-form">
+		<h1>Send me a message</h1>
+		@using (Html.BeginForm("Create", "Contact", FormMethod.Post))
+		{
+			@Html.AntiForgeryToken()
+			<div class="txtb">
+				<label for="fullname">Full Name</label>
+				@Html.TextBoxFor(m => m.FullName, new {@placeholder = "enter your name", @name="fullname"})
+				@Html.ValidationMessageFor(m => m.FullName)
+			</div>
+			<div class="txtb">
+				<label for="email">Email</label>
+				@Html.TextBoxFor(m => m.Email, new { @placeholder = "user@example.com", @type = "email", @name = "email" })
+				@Html.ValidationMessageFor(m => m.Email)
+			</div>
+			<div class="txtb">
+				<label for="message">Message</label>
+				@Html.TextAreaFor(m => m.Message, new { @placeholder = "type message here", @name = "message" })
+				@Html.ValidationMessageFor(m => m.Message)
+			</div>
+			<input class="btn" type="submit" value="SUBMIT">
+		}
+	</div>
 
 </div>
 

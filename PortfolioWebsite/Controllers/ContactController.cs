@@ -19,9 +19,15 @@ namespace PortfolioWebsite.Controllers
 
 
 		// GET: Contact
+		[Authorize(Roles = "Admin")]
 		public ActionResult Index()
 		{
 			return View(context.Contacts.ToList());
+		}
+
+		public ActionResult Thankyou()
+		{
+			return View();
 		}
 
 		public ActionResult Create()
@@ -36,7 +42,7 @@ namespace PortfolioWebsite.Controllers
 			{
 				context.Contacts.Add(model);
 				await context.SaveChangesAsync();
-				return RedirectToAction("Index");
+				return RedirectToAction("Thankyou");
 			}
 
 			return View(model);
